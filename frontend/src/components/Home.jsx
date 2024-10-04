@@ -15,9 +15,12 @@ const Home = () => {
 
   const getAllTasks = async () => {
     try {
-      const { data } = await axios.get("http://localhost:9000/get", {
-        withCredentials: true,
-      });
+      const { data } = await axios.get(
+        "https://backend-oa64.onrender.com/get",
+        {
+          withCredentials: true,
+        }
+      );
       setTasks(data.tasks);
     } catch (error) {
       console.log(error + " error in getalltask");
@@ -29,7 +32,7 @@ const Home = () => {
   const addTask = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:9000/add",
+        "https://backend-oa64.onrender.com/add",
         { title, description },
         {
           withCredentials: true,
@@ -46,7 +49,7 @@ const Home = () => {
   const deleteTask = async (id) => {
     try {
       const { data } = await axios.delete(
-        `http://localhost:9000/delete/${id}`,
+        `https://backend-oa64.onrender.com/delete/${id}`,
         {
           withCredentials: true,
         }
@@ -61,7 +64,7 @@ const Home = () => {
   const updateTask = async (id) => {
     const updatedTask = tasks.find((task) => task._id === id);
     await axios
-      .put(`http://localhost:9000/update/${id}`, updatedTask, {
+      .put(`https://backend-oa64.onrender.com/update/${id}`, updatedTask, {
         withCredentials: true,
       })
       .then((res) => {

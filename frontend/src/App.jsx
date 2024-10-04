@@ -16,9 +16,12 @@ function App() {
   useEffect(() => {
     const getUser = async () => {
       try {
-        const { data } = await axios.get("http://localhost:9000/me", {
-          withCredentials: true,
-        });
+        const { data } = await axios.get(
+          "https://backend-oa64.onrender.com/me",
+          {
+            withCredentials: true,
+          }
+        );
         setUser(data.user);
         setIsAuthenticated(true);
       } catch (error) {

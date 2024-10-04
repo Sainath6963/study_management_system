@@ -15,7 +15,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:9000/register",
+        "https://backend-oa64.onrender.com/register",
         { name, email, phone, password },
         {
           withCredentials: true,

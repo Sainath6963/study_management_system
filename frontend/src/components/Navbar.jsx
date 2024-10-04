@@ -9,10 +9,13 @@ function Navbar() {
   const handleLogout = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.get("http://localhost:9000/logout", {
-        withCredentials: true,
-        headers: { "Content-Type": "application/json" },
-      });
+      const { data } = await axios.get(
+        "https://backend-oa64.onrender.com/logout",
+        {
+          withCredentials: true,
+          headers: { "Content-Type": "application/json" },
+        }
+      );
       toast.success(data.message);
       setIsAuthenticated(false);
     } catch (error) {
