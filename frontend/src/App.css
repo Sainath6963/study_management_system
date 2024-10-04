@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size:20px;
+}
+
+.background{
+  background-image: url(../src/public/images/join_us.jpg);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.login{
+  background-image:url(./public/images/book.jpg);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.auth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+
+.auth form{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+}
+
+.auth form div{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 320px;
+}
+
+.auth form div input{
+  padding: 7px 3px;
+  
+}
+
+.auth form h3{
+  font-size: 32px ;
+  letter-spacing:1.5px;
+  margin-bottom: 15px;
+}
+
+.auth form button{
+   background-color: rgb(0, 195, 255);
+   border: none;
+   padding:10px 30px;
+   width: 320px;
+   font-weight: 500;
+   letter-spacing: 1.5;
+}
+
+nav{
+  padding: 20px 40px;
+  background: #111;
+  color:#fff;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.home{
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.Home_create_task{
+  background-image:url(./public/images/lamp-book.jpg);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+}
+
+.home h1{
+  margin-bottom: 50px 15px ;
+  font-size: 32px;
+  text-align: center;
+  color: #bdff39;
+}
+
+.home .create-task{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home .create-task input{
+  padding: 7px 3px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.home .create-task textarea{
+  padding: 7px 3px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: #060b0b;
+}
+
+.home .create-task button{
+  padding: 10px;
+  border: none ;
+  background: #5ba3ad;
+  font-weight: 100;
+  border-radius: 100px;
+}
+
+.home .tasks{
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+   color: #5ba3ad;
+   font-weight: 300;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.home .tasks .card{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 10px 4px;
+}
+
+.home .tasks .card input{
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.home .tasks .card div{
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  align-items: center;
+}
+
+.home .tasks .card div button:first-child{
+  padding: 10px 30px;
+  border: node;
+  background-color: rgb(182, 11, 11);
+  color: #091b19;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home .tasks .card div button:last-child{
+  padding: 10px 30px;
+  border: node;
+  background-color: rgb(39, 217, 77);
+  color: #091b19;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
