@@ -11,7 +11,7 @@ config({ path: "./config/config.env" });
 
 app.use(
   cors({
-    origin: ["https://studymanagement.netlify"],
+    origin: ["https://studymanagement.netlify.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
